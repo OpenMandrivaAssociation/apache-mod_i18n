@@ -3,13 +3,13 @@
 %define mod_conf B13_%{mod_name}.conf
 %define mod_so %{mod_name}.so
 
-Summary:	Mod_i18n is a DSO module for the apache web server
+Summary:	A Apache module allowing to use gettext as a output filter 
 Name:		apache-%{mod_name}
 Version:	0
 Release:	%mkrel 2
 Group:		System/Servers
 License:	Apache License
-URL:		http://www.heute-morgen.de/modules/mod_xml2/
+URL:		http://www.heute-morgen.de/modules/mod_i18n/
 Source0:	http://www.heute-morgen.de/modules/mod_i18n/mod_i18n.c
 Source1:	%{mod_conf}
 Requires(pre): rpm-helper
