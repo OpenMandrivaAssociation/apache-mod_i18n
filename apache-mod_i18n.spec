@@ -24,6 +24,7 @@ BuildRequires:	apache-mod_xml2-devel
 BuildRequires:	libxml2-devel
 BuildRequires:	libapreq-devel
 BuildRequires:	file
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 mod_i18n implements Zopes i18n namespace in an output filter. It thereby allows
