@@ -6,7 +6,7 @@
 Summary:	A Apache module allowing to use gettext as a output filter 
 Name:		apache-%{mod_name}
 Version:	0
-Release:	%mkrel 10
+Release:	%mkrel 11
 Group:		System/Servers
 License:	Apache License
 URL:		http://www.heute-morgen.de/modules/mod_i18n/
@@ -54,7 +54,7 @@ find . -type f|xargs file|grep 'text'|cut -d: -f1|xargs perl -p -i -e 's/\r//'
 
 %build
 
-%{_sbindir}/apxs -c `xml2-config --cflags` -I%{_includedir}/mod_xml2 mod_i18n.c %{_libdir}/libxml2.la %{_libdir}/libapreq2.la
+%{_sbindir}/apxs -c `xml2-config --cflags` -I%{_includedir}/mod_xml2 mod_i18n.c %{ldflags} %{_libdir}/libxml2.la %{_libdir}/libapreq2.la
 
 head -70 mod_i18n.c > README
 
