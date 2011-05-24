@@ -6,7 +6,7 @@
 Summary:	A Apache module allowing to use gettext as a output filter 
 Name:		apache-%{mod_name}
 Version:	0
-Release:	%mkrel 11
+Release:	%mkrel 12
 Group:		System/Servers
 License:	Apache License
 URL:		http://www.heute-morgen.de/modules/mod_i18n/
