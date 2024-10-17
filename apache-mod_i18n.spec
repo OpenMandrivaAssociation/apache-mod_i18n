@@ -9,7 +9,7 @@ Version:	0
 Release:	%mkrel 13
 Group:		System/Servers
 License:	Apache License
-URL:		http://www.heute-morgen.de/modules/mod_i18n/
+URL:		https://www.heute-morgen.de/modules/mod_i18n/
 Source0:	http://www.heute-morgen.de/modules/mod_i18n/mod_i18n.c
 Source1:	%{mod_conf}
 Requires(pre): rpm-helper
